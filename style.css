@@ -1,0 +1,557 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.gamePenembak{
+    margin: 0;
+    padding: 0;
+    width: 600px;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* pembuka */
+
+.welcome {
+    position: absolute;
+    top: -20%;
+    display: flex;
+    width: 600px;
+    height: 1000px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.perkenalan{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#logo {
+    width: 180px;
+    margin-bottom: 10px;
+    margin-top: 5%;
+}
+
+#username {
+    width: 200px;
+    background-color: #ccc7c7;
+    height: 20px;
+    border: solid 4px #9d9999;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#levell{
+    display: none;
+}
+
+#level {
+    width: 210px;
+    background-color: #ccc7c7;
+    height: 30px;
+    border: solid 4px #9d9999;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.target {
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+}
+
+.target label {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.gun {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.gun1 {
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gun label {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+#gun1 {
+    width: 150px;
+}
+#gun2 {
+    width: 150px;
+}
+
+button{
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+#playGame{
+    background-color: green;
+    border: solid 3px rgb(3, 54, 3);
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#instruksi {
+    background-color: red;
+    border: solid 3px #4b0505;
+    font-size: 20px;
+}
+
+/* instruksi */
+
+.instruksi{
+    top: -0%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    width:100vw;
+    height: 100vh;
+    display: none;
+    flex-wrap: wrap;
+}
+
+.keterangan {
+    position: absolute;
+    right: 20%;
+    top: 30px;
+    width: 400px;
+    height: 600px;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    flex-direction: column;
+    display: flex;
+}
+
+.keterangan button {
+    position: absolute;
+    width: 50px;
+    right: 20px;
+    top: 25px;
+}
+
+.keterangan button {
+    background-color: red;
+    font-size: 30px;
+    border-radius: 3px;
+    border: none;
+}
+
+.keterangan h1{
+    position: absolute;
+    top: 50px;
+    left: 2px;
+}
+
+.keterangan ol {
+    position: absolute;
+    top: 100px;
+    font-size: 20px;
+    margin-bottom: 3px;
+    padding-bottom: 3px;
+}
+
+.welcomee {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    left: 20%;
+    top: 30px;
+    position: absolute;
+    width: 300px;
+    z-index: 1;
+}
+
+.perkenalan{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#logo {
+    width: 180px;
+    margin-bottom: 10px;
+    margin-top: 5%;
+}
+
+#usernamee {
+    width: 200px;
+    background-color: #ccc7c7;
+    height: 20px;
+    border: solid 4px #9d9999;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#levell{
+    display: none;
+}
+
+#level {
+    width: 210px;
+    background-color: #ccc7c7;
+    height: 30px;
+    border: solid 4px #9d9999;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.target {
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+}
+
+.target label {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.gun {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.gun1 {
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gun label {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+#gun1 {
+    width: 150px;
+}
+#gun2 {
+    width: 150px;
+}
+
+button{
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+#playGamee{
+    background-color: green;
+    border: solid 3px rgb(3, 54, 3);
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#instruksii {
+    background-color: red;
+    border: solid 3px #4b0505;
+    font-size: 20px;
+}
+
+
+/* tampilan Game */
+
+.game {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    overflow: hidden;
+    display: none;
+}
+
+#bg{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    left: -5%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.peralatan {
+    position: absolute;
+    z-index: 20;
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+}
+
+#targett1{
+    position: absolute;
+    display: none;
+    left: 1000px;
+    height: 220px;
+    width:220px;
+    top: 20px;
+}
+
+#targett2{
+    position: absolute;
+    display: none;
+    left: 500px;
+    width: 220px;
+    height: 220px;
+}
+
+#targett3{
+    display: none;
+    position: absolute;
+    left: 100px;
+    width: 220px;
+    height: 220px;
+}
+
+#bidikan{
+    position: absolute;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    top: 50%;
+    z-index: 20;
+}
+
+#boom{
+    position: absolute;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+    display: none;
+    z-index: 19;
+}
+
+#gunn1{
+    position: absolute;
+    left: 400px;
+    width: 350px;
+    height: 300px;
+    bottom: 0;
+    display: none;
+}
+
+#gunn2{
+    position: absolute;
+    left: 200px;
+    width: 350px;
+    height: 300px;
+    display: none;
+    bottom: 0;
+}
+
+
+.atas{
+    position: absolute;
+    background-color: rgba(0,0,0,0.70);
+    z-index: 30;
+    width: 80%;
+    height: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center
+
+}
+
+#name-board{
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    top: 20px;
+    color: white;
+    left: 10px;
+}
+
+#score-board{
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    top: 20px;
+    color: white;
+    left: 450px;
+}
+
+#waktu-board{
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    top: 20px;
+    color: white;
+    left:900px;
+}
+
+
+#bidikan{
+    position: absolute;
+    display: flex;
+    width: 80px;
+    height: 80px;
+}
+
+#bg {
+    position: absolute;
+}
+
+.target-aktif{
+    position: absolute;
+    width: 150px;
+}
+
+.gun-aktif {
+    position: absolute;
+    width: 280px;
+}
+
+
+/* game bagian kanan */
+.data {
+    background-color: black;
+    z-index: 100;
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+}
+
+#lederr{
+    color: white;
+    position: absolute;
+    left: 22%;
+    top: 30px;
+}
+
+#srott{
+    display: none;
+}
+
+#srot {
+    position: absolute;
+    width: 200px;
+    top: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    left: 24%;
+}
+
+.isi {
+    top: 100px;
+}
+#topname{
+    position: absolute;
+    color: white;
+    left: 100px;
+    font-size: 25px;
+    top: 150px;
+}
+
+#hight-score {
+    position: absolute;
+    color: white;
+    left: 100px;
+    top: 180px;
+}
+
+#detial {
+    position: absolute;
+    left: 200px;
+    top: 160px;
+    width: 90px;
+    background-color: yellow;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* waktu hitung mundur */
+#waktu-screen {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+    background-color: black;
+    color: white;
+    font-size: 600px;
+    justify-content: center;
+    text-align: center;
+    display: none;
+}
+
+
+/* data */
+
+.dataa {
+   margin: 0;
+   padding: 0;
+   justify-content: center;
+   width: 100vw;
+   height: 100vh;
+   display: none;
+   overflow: hidden;
+   background-color: rgba(0,0,0,0.70); 
+   z-index: 200;
+}
+.hasill{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-color: #2a2626;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    left: 40%;
+    top: 30%;
+    border-radius: 30px;
+    border: solid 1px black;
+    display: flex;
+}

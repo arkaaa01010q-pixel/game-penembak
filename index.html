@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game penembak</title>
+    <link rel="styleSheet" href="style.css">
+</head>
+<body>
+    <div class="gamePenembak">
+
+        
+        <!-- welcome -->
+        <div class="welcome" id="wel" >
+
+            <div class="perkenalan">
+                <img id="logo" src="assets/shooter.png" alt="">
+                <input type="text" placeholder="username" id="username">
+                <label id="levell" for="level">level</label>
+                <select class="level" id="level" form="level">
+                    <option value="" disabled selected hidden>Select Level</option> 
+                    <option value="level1">level1</option>
+                    <option value="level2">level2</option>
+                    <option value="level3">level3</option>
+                </select>
+            </div>
+
+            <div class="gun" id="gun">
+                <label class="gun1" for="gun1" >
+                    <img id="gun1" src="assets/gun1.png" alt="gun1">
+                    <input type="radio" name="gun" value="1" >
+                </label>
+                <label class="gun2" for="gun2" >
+                    <img id="gun2" src="assets/gun2.png" alt="gun2">
+                    <input type="radio" name="gun" value="2" >
+                </label>
+            </div>
+            <div class="target">
+                <label class="target1">
+                    <img id="target1" src="assets/target1.png" alt="target1">
+                    <input type="radio" name="target" value="1">
+                </label>
+                <label class="target1">
+                    <img id="target2" src="assets/target2.png" alt="target2">
+                    <input type="radio" name="target" value="2">
+                </label>
+                <label class="target1">
+                    <img id="target3" src="assets/target3.png" alt="target3">
+                    <input type="radio" name="target" value="3">
+                </label>
+            </div>
+            <div class="tombol">
+                <button id="playGame">Play Game</button>
+                <button id="instruksi">Instruction</button>
+            </div>
+
+        </div>
+
+        <!-- instruksi -->
+        <div class="instruksi" id="ins" >
+
+            <div class="keterangan">
+                <button id="tutup">X</button>
+                <h1>How to game Player</h1>
+                <ol>
+                    <li>Input Username</li>
+                    <li>Point The Pointer at the Target</li>
+                    <li>Click To Shoot</li>
+                    <li>Get as many points as possible</li>
+                    <li>Enjoy</li>
+                </ol>
+            </div>
+            <div class="welcomee">
+
+                <div class="perkenalan">
+                    <img id="logo" src="assets/shooter.png" alt="">
+                    <input type="text" placeholder="username" id="usernamee">
+                    <label id="levell" for="level">level</label>
+                    <select class="level" id="level" form="level">
+                        <option value="" disabled selected hidden>Select Level</option> 
+                        <option value="level1">level1</option>
+                        <option value="level2">level2</option>
+                        <option value="level3">level3</option>
+                    </select>
+                </div>
+
+                <div class="gun" id="gunInstruksi">
+                    <label class="gun1" for="gun1" >
+                        <img id="gun1" src="assets/gun1.png" alt="gun1">
+                        <input type="radio" name="gunInstruksi" value="1" >
+                    </label>
+                    <label class="gun2" for="gun2" >
+                        <img id="gun2" src="assets/gun2.png" alt="gun2">
+                        <input type="radio" name="gunInstruksi" value="2" >
+                    </label>
+                </div>
+                <div class="target">
+                    <label class="target1">
+                        <img id="target1" src="assets/target1.png" alt="target1">
+                        <input type="radio" name="targetInstruksi" value="1">
+                    </label>
+                    <label class="target1">
+                        <img id="target2" src="assets/target2.png" alt="target2">
+                        <input type="radio" name="targetInstruksi" value="2">
+                    </label>
+                    <label class="target1">
+                        <img id="target3" src="assets/target3.png" alt="target3">
+                        <input type="radio" name="targetInstruksi" value="3">
+                    </label>
+                </div>
+                <div class="tombol">
+                    <button id="playGamee">Play Game</button>
+                    <button id="instruksii">Instruction</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- waktu hitung meundur -->
+        <div class="waktu-screenn"><span id="waktu-screen">3</span></div>
+
+
+        <!-- Tampilan game -->
+
+        <div class="game" id="game" >
+
+            <div class="atas">
+                <div id="name-board">Nama:<span id="name"></span></div>
+                <div id="score-board">Score: <span id="score">0</span></div>
+                <div id="waktu-board">Waktu:<span id="waktu"></span></div>
+            </div>
+
+
+            <div class="data">
+                <div class="leder">
+                    <h1 id="lederr">LEDERBOARD</h1>
+                    <label id="sortt" for="srot" class="srot">Sotr by Score</label>
+                    <select form="sort" id="srot" class="srot" >
+                        <option value="" selected disabled hidden>SROT BY SCORE</option>
+                    </select> 
+                </div>
+                <div class="isi">
+                    <span id="topname"></span>
+                    <h3 id="hight-score">Score:<span id="hight-scoree"></span></h3>
+                    <button id="detial">Detail</button>
+                </div>
+            </div>
+
+            <div class="peralatan">
+                <img id="targett1" src="assets/target1.png" alt="" >
+                <img id="targett2" src="assets/target2.png" alt="">
+                <img id="targett3" src="assets/target3.png" alt="">
+
+                <img id="gunn1" src="assets/gun1.png" alt="">
+                <img id="gunn2" src="assets/gun2.png" alt="">
+
+                <img id="bidikan" src="assets/pointer.png" alt="">
+                <img id="boom" src="assets/boom.png" alt="">
+
+                <div class="target-aktif"></div>
+                <div class="gun-aktif"></div>
+            </div>
+
+            <img id="bg" src="assets/background.jpg" alt="">
+
+
+            <div class="dataa" id="dataa">
+                <div class="hasill" id="hasill">
+                    <h2>Waktu Habis</h2>
+                    <p>Score Kamu:<span id="Score-tinggi">0</span></p>
+                    <h3 id="pilihan">Simpan Atau Tidak</h3>
+                    <div class="pilihan">
+                        <button id="iya">simpan</button>
+                        <button id="tidak">Tidak</button>
+                    </div>
+                </div>
+            </div>
+ 
+        </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
